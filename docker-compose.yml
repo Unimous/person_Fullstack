@@ -4,7 +4,7 @@ services:
   db:
     build:
       context: ./
-      dockerfile: ./Dockerfile
+      dockerfile: ./Postgresql
     ports:
       - "5432:5432"
     volumes:
@@ -14,7 +14,7 @@ services:
   java:
     build:
       context: ./
-      dockerfile: ./Javafile
+      dockerfile: ./Springboot
     restart: always
     ports:
       - "8080:8080"
